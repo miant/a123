@@ -60,7 +60,7 @@ jobs:
           fi
           
           # 推送到你的 Fork
-          git push origin main
+          git push origin main --force-with-lease
 
       # 4. 输出更新信息
       - name: Get update details
