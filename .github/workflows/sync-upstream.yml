@@ -41,7 +41,7 @@ jobs:
           echo "before_commit=$BEFORE_COMMIT" >> $GITHUB_OUTPUT
           
           # 合并上游主分支
-          git merge upstream/master --no-edit || {
+          git merge upstream/main --no-edit || {
             echo "Merge failed, trying rebase"
             git rebase upstream/main
           }
